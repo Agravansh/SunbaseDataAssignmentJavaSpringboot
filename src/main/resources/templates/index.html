@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sunbase Data App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sunbase Data App</h1>
+        <div id="login-screen">
+            <h2>Login</h2>
+            <input type="text" id="loginId" placeholder="Login ID">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="customer-list-screen" style="display:none">
+            <!-- Customer list will be displayed here -->
+            <button onclick="showAddCustomerScreen()">Add Customer</button>
+        </div>
+        <div id="add-customer-screen" style="display:none">
+            <h2>Add New Customer</h2>
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <input type="text" id="street" placeholder="Street">
+            <input type="text" id="address" placeholder="Address">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="state" placeholder="State">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="phone" placeholder="Phone">
+            <button onclick="createCustomer()">Save Customer</button>
+            <button onclick="cancelAddCustomer()">Cancel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

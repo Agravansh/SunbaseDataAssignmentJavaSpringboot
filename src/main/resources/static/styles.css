@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#login-screen, #customer-list-screen, #add-customer-screen {
+    text-align: center;
+}
+
+input, button {
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}
